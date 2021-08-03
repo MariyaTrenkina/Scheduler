@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="456.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Customers_FormController">
+   <children>
+      <Label fx:id="customersLabel" layoutX="52.0" layoutY="19.0" prefHeight="48.0" prefWidth="185.0" text="Customers">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="customersTableView" layoutX="38.0" layoutY="102.0" prefHeight="265.0" prefWidth="664.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="126.0" text="Name" />
+            <TableColumn fx:id="phoneNumberColumn" prefWidth="108.0" text="Phone Number" />
+          <TableColumn fx:id="addressColumn" minWidth="0.0" prefWidth="163.0" text="Address" />
+            <TableColumn fx:id="stateColumn" prefWidth="109.0" text="State/Providence" />
+            <TableColumn fx:id="countryColumn" prefWidth="84.0" text="Country" />
+            <TableColumn fx:id="postalCodeColumn" prefWidth="72.0" text="Postal Code" />
+        </columns>
+      </TableView>
+      <Button fx:id="addBtn" layoutX="339.0" layoutY="384.0" mnemonicParsing="false" onAction="#onActionAddBtn" prefHeight="31.0" prefWidth="82.0" text="Add" />
+      <Button fx:id="modifyBtn" layoutX="433.0" layoutY="384.0" mnemonicParsing="false" onAction="#onActionModifyBtn" prefHeight="31.0" prefWidth="82.0" text="Modify" />
+      <Button fx:id="deleteBtn" layoutX="529.0" layoutY="384.0" mnemonicParsing="false" onAction="#onActionDeleteBtn" prefHeight="31.0" prefWidth="82.0" text="Delete" />
+      <Button fx:id="backBtn" layoutX="620.0" layoutY="384.0" mnemonicParsing="false" onAction="#onActionBackBtn" prefHeight="31.0" prefWidth="82.0" text="Back" />
+   </children>
+</AnchorPane>

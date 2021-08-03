@@ -1,0 +1,5 @@
+- Appointment Scheduler (C195), purpose: Scheduler for tracking appointments with customers
+- Mariya Trenkina, mtrenki@wgu.edu, v1.0, 1FEB2021
+- Apache NetBeans IDE 12.0, jdk1.8.0_271
+- Start program and enter user login credentials to login into the appointment scheduler; Create customers, appointments or view reports.
+- The additional report generates a count of appointments that are scheduled to occur within the next 7 days.
